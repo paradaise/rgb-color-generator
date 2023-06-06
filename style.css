@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+
+body {
+  margin: 0;
+}
+.container {
+  font-family: Prompt, sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.hex-colors {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+.hex-colors h1 {
+  animation: colorchange 5s infinite alternate;
+}
+
+.hex-colors h2 {
+  font-size: 2rem;
+  /* border: 1px solid black; */
+  margin-top: 15%;
+}
+
+.btn {
+  height: 45px;
+  width: 90px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+  transition: 0.5s;
+  margin-bottom: 5%;
+}
+.btn:hover {
+  color: cornflowerblue;
+  background-color: white;
+}
+
+@keyframes colorchange {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: blue;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: yellow;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
